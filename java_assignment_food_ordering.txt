@@ -1,0 +1,75 @@
+# Java Programming Assignment: Online Food Ordering System
+
+## Objective
+You will build a **mini Online Food Ordering System** in Java using **OOP concepts** and at least **one Design Pattern**.
+ The goal is to practice class creation, method calls across classes, and implementing a design pattern.
+
+---
+
+## Problem Statement
+A customer wants to order food online. The system should allow:
+1. Choosing a restaurant.
+2. Selecting food items.
+3. Placing the order and receiving confirmation.
+
+You must implement this step by step.
+
+---
+
+## Step-by-Step Tasks
+
+### Step 1: Define the Entities
+- Create an interface `FoodItem` with a method `prepare()`.
+- Implement at least **two classes** (`Pizza`, `Burger`) that implement `FoodItem`.
+
+### Step 2: Implement a Factory Pattern
+- Create a `FoodFactory` class with a method `getFood(String foodType)` that returns the correct `FoodItem`.
+- Example: `getFood("PIZZA")` returns a `Pizza` object.
+
+### Step 3: Add Restaurant Class
+- Create a `Restaurant` class with methods:
+  - `addMenuItem(FoodItem item)`
+  - `showMenu()`
+- Demonstrate **method calls between classes** here.
+
+### Step 4: Add Customer Class
+- Create a `Customer` class with:
+  - `placeOrder(String foodType, Restaurant restaurant)` → uses `FoodFactory` to order food.
+
+### Step 5: Main Program
+- In `Main.java`:
+  - Create a restaurant and add food items.
+  - Show the menu.
+  - Create a customer and place an order.
+  - Print confirmation (e.g., “Customer ordered Pizza. Pizza is prepared!”).
+
+---
+
+## Example Output
+```
+Restaurant Menu:
+1. Pizza
+2. Burger
+
+Customer ordered Pizza.
+Preparing Pizza...
+Pizza is ready!
+```
+
+---
+
+## GitHub Instructions
+1. Create a new repository `food-ordering-system`.
+2. Add all `.java` files (`Main.java`, `FoodItem.java`, `Pizza.java`, `Burger.java`, `FoodFactory.java`, `Restaurant.java`, `Customer.java`).
+3. Add a `README.md` explaining:
+   - The **use case**
+   - The **design pattern** used (Factory Pattern)
+   - How to run the program
+
+---
+
+## Grading Criteria
+- ✅ Correct OOP design with interfaces and classes
+- ✅ Working Factory Pattern implementation
+- ✅ Method calls across classes
+- ✅ Clean, readable code pushed to GitHub with documentation
