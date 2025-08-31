@@ -4,7 +4,7 @@ public class FoodFactory {
 
     public FoodItem getFood(String foodType){
 
-        if(foodType.equals("PIZZA")){
+        if(foodType.equalsIgnoreCase("PIZZA")){
             return new Pizza();
         }else{
             return new Burger();

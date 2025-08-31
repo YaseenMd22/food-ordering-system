@@ -7,18 +7,17 @@ public class Restaurant {
 
     List<FoodItem> menu = new ArrayList<>();
     public void addMenuItem(FoodItem item){
-//        List<FoodItem> menu = new ArrayList<>();
         menu.add(item);
-//        return menu;
     }
 
     public void showMenu(){
 
         System.out.println("Restaurant Menu:");
 
+        int count =1;
         for(FoodItem item: menu){
-            System.out.println(item);
+            System.out.println(count + ". "+ item);
+            count++;
         }
-
     }
 }

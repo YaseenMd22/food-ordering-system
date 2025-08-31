@@ -16,8 +16,6 @@ public class Main {
 
         restaurant.showMenu();
 
-
-
         Customer customer = new Customer();
         customer.placeOrder("PIZZA", restaurant);
     }
